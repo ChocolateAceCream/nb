@@ -1,0 +1,29 @@
+server:
+  port: 3002
+spring:
+#  datasource:
+#    url: jdbc:mysql://113.128.65.64:3306/nb?useSSL=false&userUnicode=true&characterEncoding=UTF8&serverTimezone=GMT
+#    username: nuodi
+#    password: abc.123
+#    driverClassName: com.mysql.cj.jdbc.Driver
+  datasource:
+    url: jdbc:mysql://localhost:3306/nb?useSSL=false&userUnicode=true&characterEncoding=UTF8&serverTimezone=GMT
+    username: root
+    password: password
+    driverClassName: com.mysql.cj.jdbc.Driver
+  ## MULTIPART (MultipartProperties)
+  # Enable multipart uploads
+  servlet:
+    multipart:
+      enabled: true
+      # Max file size.
+      max-file-size: 200MB
+      # Max Request Size
+      max-request-size: 200MB
+      # Threshold after which files are written to disk.
+      file-size-threshold: 2KB
+  ## File Storage Properties
+  # All files uploaded through the REST API will be stored in this directory
+file:
+  #save file to nb/static/ folder
+  upload-dir: ${user.dir}/static/

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.di.nb.mapper.NbConfigMapper">
+    <select id="getConfigMapper"  parameterType="com.di.nb.domain.RequestParamsData"  resultMap="nbConfigBean">
+        select  *  from nb_config
+    </select>
+
+    <resultMap type="com.di.nb.domain.NbConfigBean" id="nbConfigBean">
+        <id column="device_id" property="device_id" />
+        <result column="device_name" property="device_name" />
+    </resultMap>
+
+    <insert id="insertConfigMapper" parameterType="com.di.nb.domain.NbConfigBean">
+        insert into
+        nb_config
+                (device_id,device_name)
+        values
+               (#{device_id},#{device_name})
+    </insert>
+
+    <update id="updateConfigMapper" parameterType="com.di.nb.domain.NbConfigBean">
+        update nb_config
+        set device_name=#{device_name}
+        where 1=1
+          and device_id=#{device_id}
+    </update>
+
+    <delete id="deleteConfigMapper" parameterType="com.di.nb.domain.RequestParamsData">
+        delete from nb_config
+        where 1=1
+          and device_id=#{device_id}
+    </delete>
+</mapper>
+
+
+
