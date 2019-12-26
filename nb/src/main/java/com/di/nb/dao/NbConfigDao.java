@@ -10,7 +10,7 @@ import java.util.List;
 public interface NbConfigDao {
     List<NbConfigBean> getConfigByDeviceId(RequestParamsData data);
     int insertConfig(NbConfigBean bean);
-    int updateConfig(NbConfigBean bean);
+    // int updateConfig(NbConfigBean bean);
     int deleteConfig(RequestParamsData data);
 }
 

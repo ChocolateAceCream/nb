@@ -28,16 +28,56 @@ public class NbConfigApiController{
     @Autowired
     private FileStorageService fileStorageService;
 
+    /**since there is a file in uploading http request, the request body has to be of type
+     * form-data, so @RequestBody annotation cannot be applied here. in order to encapsulate request params,
+     * only way is to customize your own annotation, such as @FormData, which should be done later
+     *
+     * 因为上传的http请求包含文件，所以请求的body必须是 form-data， 所以@RequestBody不可用。封装这种请求的唯一方法
+     * 是定制自己的标注，比如@FormData
+     * */
     @PostMapping(value="/config/uploadFile")
     public ResultJson uploadFile(
             @RequestParam("file") MultipartFile file,
-            @RequestParam String device_id,
-            @RequestParam String device_name
+            @RequestParam String deviceId,
+            @RequestParam String gatewayId,
+            @RequestParam String serviceType,
+            @RequestParam String serviceId,
+            @RequestParam String isParsing,
+            @RequestParam String parseField,
+            @RequestParam String parseJarClass,
+            @RequestParam String parseJarMethod,
+            @RequestParam String isBaseDecode,
+            @RequestParam String storageFields,
+            @RequestParam String isCallback,
+            @RequestParam String appId,
+            @RequestParam String method,
+            @RequestParam String callbackUrl,
+            @RequestParam String maxRetransmit,
+            @RequestParam String expireTime,
+            @RequestParam String callbackFieldsKey,
+            @RequestParam String callbackFieldsValues
             ) {
-        //System.out.println(device_id + " ----- " + device_name);
+        //System.out.println(deviceId + " ----- " + gatewayId);
         NbConfigBean config = new NbConfigBean();
-        config.setDevice_id(device_id);
-        config.setDevice_name(device_name);
+        config.setDeviceId(deviceId);
+        config.setGatewayId(gatewayId);
+        config.setServiceType(serviceType);
+        config.setServiceId(serviceId);
+        config.setIsParsing(isParsing);
+        config.setParseField(parseField);
+        config.setParseJarClass(parseJarClass);
+        config.setParseJarMethod(parseJarMethod);
+        config.setIsBaseDecode(isBaseDecode);
+        config.setStorageFields(storageFields);
+        config.setIsCallback(isCallback);
+        config.setAppId(appId);
+        config.setMethod(method);
+        config.setCallbackUrl(callbackUrl);
+        config.setMaxRetransmit(maxRetransmit);
+        config.setExpireTime(expireTime);
+        config.setCallbackFieldsKey(callbackFieldsKey);
+        config.setCallbackFieldsValues(callbackFieldsValues);
+
         String fileName = fileStorageService.storeFile(file);
         int result = nbConfigService.insertConfigService(config);
         ResultJson json = new ResultJson();
@@ -99,23 +139,23 @@ public class NbConfigApiController{
     //    return json;
     //}
 
-    @PostMapping(value="/config/update")
-    public ResultJson updateConfig(@RequestBody NbConfigBean config) {
-        ResultJson json = new ResultJson();
-        int result = nbConfigService.updateConfigService(config);
-        System.out.println(result);
+    // @PostMapping(value="/config/update")
+    // public ResultJson updateConfig(@RequestBody NbConfigBean config) {
+    //     ResultJson json = new ResultJson();
+    //     int result = nbConfigService.updateConfigService(config);
+    //     System.out.println(result);
 
-        if (result == 1) {
-            json.setResult(CODE);
-            json.setMsg("success！!!!");
-            json.setResult(result);
-        }else {
-            json.setResult(ERRORCODE);
-            json.setMsg("fail！");
-            json.setResult(null);
-        }
-        return json;
-    }
+    //     if (result == 1) {
+    //         json.setResult(CODE);
+    //         json.setMsg("success！!!!");
+    //         json.setResult(result);
+    //     }else {
+    //         json.setResult(ERRORCODE);
+    //         json.setMsg("fail！");
+    //         json.setResult(null);
+    //     }
+    //     return json;
+    // }
 
     @RequestMapping(value="/config/delete",method=RequestMethod.DELETE)
     //@PostMapping(value="/config/delete")

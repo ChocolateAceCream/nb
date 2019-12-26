@@ -8,29 +8,85 @@
     </select>
 
     <resultMap type="com.di.nb.domain.NbConfigBean" id="nbConfigBean">
-        <id column="device_id" property="device_id" />
-        <result column="device_name" property="device_name" />
+        <id column="deviceId" property="deviceId" />
+        <result column="gatewayId" property="gatewayId" />
+        <result column="serviceType" property="serviceType" />
+        <result column="serviceId" property="serviceId" />
+        <result column="isParsing" property="isParsing" />
+        <result column="parseField" property="parseField" />
+        <result column="parseJarClass" property="parseJarClass" />
+        <result column="parseJarMethod" property="parseJarMethod" />
+        <result column="isBaseDecode" property="isBaseDecode" />
+        <result column="storageFile" property="storageFile" />
+        <result column="isCallable" property="isCallable" />
+        <result column="appId" property="appId" />
+        <result column="method" property="method" />
+        <result column="callbackUrl" property="callbackUrl" />
+        <result column="maxRetransmit" property="maxRetransmit" />
+        <result column="expireTime" property="expireTime" />
+        <result column="callbackFieldsKey" property="callbackFieldsKey" />
+        <result column="callbackFieldsValues" property="callbackFieldsValues" />
     </resultMap>
 
     <insert id="insertConfigMapper" parameterType="com.di.nb.domain.NbConfigBean">
         insert into
-        nb_config
-                (device_id,device_name)
-        values
-               (#{device_id},#{device_name})
+        nb_config(
+                deviceId,
+                gatewayId,
+                serviceType,
+                serviceId,
+                isParsing,
+                parseField,
+                parseJarClass,
+                parseJarMethod,
+                isBaseDecode,
+                storageFields,
+                isCallback,
+                appId,
+                method,
+                callbackUrl,
+                maxRetransmit,
+                expireTime,
+                callbackFieldsKey,
+                callbackFieldsValues
+        )
+        values(
+            #{deviceId},
+            #{gatewayId},
+            #{serviceType},
+            #{serviceId},
+            #{isParsing},
+            #{parseField},
+            #{parseJarClass},
+            #{parseJarMethod},
+            #{isBaseDecode},
+            #{storageFields},
+            #{isCallback},
+            #{appId},
+            #{method},
+            #{callbackUrl},
+            #{maxRetransmit},
+            #{expireTime},
+            #{callbackFieldsKey},
+            #{callbackFieldsValues}
+        )
     </insert>
 
+    <!--
     <update id="updateConfigMapper" parameterType="com.di.nb.domain.NbConfigBean">
         update nb_config
-        set device_name=#{device_name}
+        set gatewayId=#{gatewayId}
         where 1=1
-          and device_id=#{device_id}
+          and deviceId=#{deviceId}
+                where 1=1
+                and deviceId=#{deviceId}
     </update>
+    -->
 
     <delete id="deleteConfigMapper" parameterType="com.di.nb.domain.RequestParamsData">
         delete from nb_config
         where 1=1
-          and device_id=#{device_id}
+          and deviceId=#{deviceId}
     </delete>
 </mapper>
 

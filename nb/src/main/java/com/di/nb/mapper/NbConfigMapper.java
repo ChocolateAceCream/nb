@@ -16,14 +16,14 @@ import java.util.List;
 
 @Mapper
 public interface NbConfigMapper {
-    //@Select("SELECT * FROM nb_config WHERE device_id = ${device_id}")
+    //@Select("SELECT * FROM nb_config WHERE deviceId = ${deviceId}")
     List<NbConfigBean> getConfigMapper(RequestParamsData data);
 
     int insertConfigMapper(NbConfigBean bean);
-    int updateConfigMapper(NbConfigBean bean);
+    // int updateConfigMapper(NbConfigBean bean);
     int deleteConfigMapper(RequestParamsData data);
 
-    //@Insert("insert into nb_config(device_name) values(#{device_name}")
-    //int insert(@Param("device_name") String device_name);
+    //@Insert("insert into nb_config(gatewayId) values(#{gatewayId}")
+    //int insert(@Param("gatewayId") String gatewayId);
 }
 

@@ -8,7 +8,7 @@ import java.util.List;
 public interface NbConfigService {
      List<NbConfigBean> getConfigByDeviceId(RequestParamsData data);
      int insertConfigService(NbConfigBean bean);
-     int updateConfigService(NbConfigBean bean);
+     // int updateConfigService(NbConfigBean bean);
      int deleteConfigService(RequestParamsData data);
 
 }
