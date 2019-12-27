@@ -8,9 +8,10 @@ import java.util.List;
 
 @Repository
 public interface NbConfigDao {
-    List<NbConfigBean> getConfigByDeviceId(RequestParamsData data);
+    NbConfigBean getConfigByDeviceId(String data);
+    List<NbConfigBean> getAllConfig();
     int insertConfig(NbConfigBean bean);
     // int updateConfig(NbConfigBean bean);
-    int deleteConfig(RequestParamsData data);
+    int deleteConfig(String data);
 }
 

@@ -45,6 +45,7 @@ public class NbApplication {
                     .authorizeRequests()
                     .antMatchers(HttpMethod.POST, "/user/login").permitAll()
                     //.antMatchers(HttpMethod.POST, "/rest/config/uploadFile").permitAll()
+                    //.antMatchers(HttpMethod.DELETE, "/rest/config/delete").permitAll()
                     .antMatchers(HttpMethod.POST, "/user/signup").permitAll()
                     .anyRequest().authenticated();
         }

@@ -17,11 +17,12 @@ import java.util.List;
 @Mapper
 public interface NbConfigMapper {
     //@Select("SELECT * FROM nb_config WHERE deviceId = ${deviceId}")
-    List<NbConfigBean> getConfigMapper(RequestParamsData data);
+    NbConfigBean getConfigByIdMapper(String deviceId);
+    List<NbConfigBean> getAllConfigMapper();
 
     int insertConfigMapper(NbConfigBean bean);
     // int updateConfigMapper(NbConfigBean bean);
-    int deleteConfigMapper(RequestParamsData data);
+    int deleteConfigMapper(String deviceId);
 
     //@Insert("insert into nb_config(gatewayId) values(#{gatewayId}")
     //int insert(@Param("gatewayId") String gatewayId);

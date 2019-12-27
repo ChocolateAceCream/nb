@@ -6,9 +6,11 @@ import com.di.nb.domain.RequestParamsData;
 import java.util.List;
 
 public interface NbConfigService {
-     List<NbConfigBean> getConfigByDeviceId(RequestParamsData data);
+     NbConfigBean getConfigByDeviceId(String data);
+     String deleteFile(String fileName);
+     List<NbConfigBean> getAllConfig();
      int insertConfigService(NbConfigBean bean);
      // int updateConfigService(NbConfigBean bean);
-     int deleteConfigService(RequestParamsData data);
+     int deleteConfigService(String data);
 
 }

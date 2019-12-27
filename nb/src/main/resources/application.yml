@@ -26,4 +26,4 @@ spring:
   # All files uploaded through the REST API will be stored in this directory
 file:
   #save file to nb/static/ folder
-  upload-dir: ${user.dir}/static/
+  upload-dir: ${user.dir}/jar/

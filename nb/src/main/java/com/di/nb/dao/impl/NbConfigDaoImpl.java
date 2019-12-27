@@ -18,8 +18,14 @@ public class NbConfigDaoImpl implements NbConfigDao {
     private NbConfigMapper nbConfigMapper;
 
     @Override
-    public List<NbConfigBean> getConfigByDeviceId(RequestParamsData data) {
-        return nbConfigMapper.getConfigMapper(data);
+    public List<NbConfigBean> getAllConfig() {
+        return nbConfigMapper.getAllConfigMapper();
+    }
+
+    @Override
+    public NbConfigBean getConfigByDeviceId(String data) {
+        //System.out.println(data);
+        return nbConfigMapper.getConfigByIdMapper(data);
     }
 
     @Override
@@ -33,7 +39,7 @@ public class NbConfigDaoImpl implements NbConfigDao {
     // }
 
     @Override
-    public int deleteConfig(RequestParamsData data){
+    public int deleteConfig(String data){
         return nbConfigMapper.deleteConfigMapper(data);
     }
 

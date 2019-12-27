@@ -105,10 +105,10 @@ public class NbConfigApiController{
     //    return new UploadFileResponse(fileName, fileDownloadUri, file.getContentType(), file.getSize());
     //}
 
-    @PostMapping(value="/config/get")
-    public ResultJson getConfig(@RequestBody RequestParamsData data) {
+    @RequestMapping(value="/config/get",method=RequestMethod.GET)
+    public ResultJson getConfig() {
         ResultJson json = new ResultJson();
-        List<NbConfigBean> bean = nbConfigService.getConfigByDeviceId(data);
+        List<NbConfigBean> bean = nbConfigService.getAllConfig();
         if (bean.size() > 0) {
             json.setResult(CODE);
             json.setMsg("success！!!!");
@@ -159,20 +159,28 @@ public class NbConfigApiController{
 
     @RequestMapping(value="/config/delete",method=RequestMethod.DELETE)
     //@PostMapping(value="/config/delete")
-    public ResultJson deleteConfig(@RequestBody RequestParamsData data) {
+    //public ResultJson deleteConfig(@RequestBody RequestParamsData data) {
+    public ResultJson deleteConfig(@RequestParam String deviceId) {
         ResultJson json = new ResultJson();
-        int count = nbConfigService.deleteConfigService(data);
-        int code = 200;
-        String msg = "";
-        code = count >= 0 ? 200 : 400;
-        if(count > 0){
-            msg = "删除成功！";
-        }else{
-            msg = "删除失败！";
+        NbConfigBean bean = nbConfigService.getConfigByDeviceId(deviceId);
+        if(bean==null){
+            json.setStatus(400);
+            json.setResult("error");
+            json.setMsg("deviceId错误，数据没找到");
+        } else {
+            String msg = nbConfigService.deleteFile(bean.getParseJarClass());
+            int count = nbConfigService.deleteConfigService(deviceId);
+            int code = 200;
+            code = count >= 0 ? 200 : 400;
+            if(count > 0){
+                msg += ",sql删除成功！";
+            }else{
+                msg += ",sql删除失败！";
+            }
+            json.setStatus(code);
+            json.setResult(count);
+            json.setMsg(msg);
         }
-        json.setStatus(code);
-        json.setResult(count);
-        json.setMsg(msg);
         return json;
     }
 
