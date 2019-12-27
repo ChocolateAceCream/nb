@@ -157,7 +157,7 @@ public class NbConfigApiController{
     //     return json;
     // }
 
-    @RequestMapping(value="/config/delete",method=RequestMethod.DELETE)
+    @RequestMapping(value="/config/delete",method=RequestMethod.POST)
     //@PostMapping(value="/config/delete")
     //public ResultJson deleteConfig(@RequestBody RequestParamsData data) {
     public ResultJson deleteConfig(@RequestParam String deviceId) {
@@ -165,7 +165,7 @@ public class NbConfigApiController{
         NbConfigBean bean = nbConfigService.getConfigByDeviceId(deviceId);
         if(bean==null){
             json.setStatus(400);
-            json.setResult("error");
+            json.setResult("ERROR");
             json.setMsg("deviceId错误，数据没找到");
         } else {
             String msg = nbConfigService.deleteFile(bean.getParseJarClass());
@@ -181,6 +181,7 @@ public class NbConfigApiController{
             json.setResult(count);
             json.setMsg(msg);
         }
+
         return json;
     }
 
