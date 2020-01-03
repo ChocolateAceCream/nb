@@ -20,6 +20,7 @@
         <result column="serviceId" property="serviceId" />
         <result column="isParsing" property="isParsing" />
         <result column="parseField" property="parseField" />
+        <result column="parseJarPath" property="parseJarPath" />
         <result column="parseJarClass" property="parseJarClass" />
         <result column="parseJarMethod" property="parseJarMethod" />
         <result column="isBaseDecode" property="isBaseDecode" />
@@ -43,6 +44,7 @@
                 serviceId,
                 isParsing,
                 parseField,
+                parseJarPath,
                 parseJarClass,
                 parseJarMethod,
                 isBaseDecode,
@@ -63,6 +65,7 @@
             #{serviceId},
             #{isParsing},
             #{parseField},
+            #{parseJarPath},
             #{parseJarClass},
             #{parseJarMethod},
             #{isBaseDecode},
@@ -86,6 +89,7 @@
             serviceId=#{serviceId},
             isParsing=#{isParsing},
             parseField=#{parseField},
+            parseJarClass=#{parseJarPath},
             parseJarClass=#{parseJarClass},
             parseJarMethod=#{parseJarMethod},
             isBaseDecode=#{isBaseDecode},

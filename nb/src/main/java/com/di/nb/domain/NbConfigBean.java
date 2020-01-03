@@ -7,6 +7,7 @@ public class NbConfigBean{
     private String serviceId;
     private String isParsing;
     private String parseField;
+    private String parseJarPath;
     private String parseJarClass;
     private String parseJarMethod;
     private String isBaseDecode;
@@ -51,7 +52,13 @@ public class NbConfigBean{
     public void setParseField(String parseField) {
         this.parseField = parseField;
     }
+    public String getParseJarPath() {
+        return parseJarPath;
+    }
 
+    public void setParseJarPath(String parseJarPath) {
+        this.parseJarPath = parseJarPath;
+    }
     public String getParseJarClass() {
         return parseJarClass;
     }

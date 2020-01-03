@@ -44,6 +44,7 @@ public class NbConfigApiController{
             @RequestParam String serviceId,
             @RequestParam String isParsing,
             @RequestParam String parseField,
+            @RequestParam String parseJarPath,
             @RequestParam String parseJarClass,
             @RequestParam String parseJarMethod,
             @RequestParam String isBaseDecode,
@@ -65,6 +66,7 @@ public class NbConfigApiController{
         config.setServiceId(serviceId);
         config.setIsParsing(isParsing);
         config.setParseField(parseField);
+        config.setParseField(parseJarPath);
         config.setParseJarClass(parseJarClass);
         config.setParseJarMethod(parseJarMethod);
         config.setIsBaseDecode(isBaseDecode);
@@ -78,7 +80,7 @@ public class NbConfigApiController{
         config.setCallbackFieldsKey(callbackFieldsKey);
         config.setCallbackFieldsValues(callbackFieldsValues);
 
-        String fileName = fileStorageService.storeFile(file);
+        String fileName = fileStorageService.storeFile(file,parseJarPath);
         int result = nbConfigService.insertConfigService(config);
         ResultJson json = new ResultJson();
         //System.out.println(result);
@@ -205,6 +207,7 @@ public class NbConfigApiController{
             @RequestParam String serviceId,
             @RequestParam String isParsing,
             @RequestParam String parseField,
+            @RequestParam String parseJarPath,
             @RequestParam String parseJarClass,
             @RequestParam String parseJarMethod,
             @RequestParam String isBaseDecode,
@@ -226,6 +229,7 @@ public class NbConfigApiController{
         config.setServiceId(serviceId);
         config.setIsParsing(isParsing);
         config.setParseField(parseField);
+        config.setParseJarClass(parseJarPath);
         config.setParseJarClass(parseJarClass);
         config.setParseJarMethod(parseJarMethod);
         config.setIsBaseDecode(isBaseDecode);
@@ -239,7 +243,7 @@ public class NbConfigApiController{
         config.setCallbackFieldsKey(callbackFieldsKey);
         config.setCallbackFieldsValues(callbackFieldsValues);
 
-        String fileName = fileStorageService.storeFile(file);
+        String fileName = fileStorageService.storeFile(file, parseJarPath);
         int result = nbConfigService.updateConfigService(config);
         ResultJson json = new ResultJson();
         //System.out.println(result);
