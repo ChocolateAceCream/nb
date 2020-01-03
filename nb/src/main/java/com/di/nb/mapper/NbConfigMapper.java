@@ -21,7 +21,7 @@ public interface NbConfigMapper {
     List<NbConfigBean> getAllConfigMapper();
 
     int insertConfigMapper(NbConfigBean bean);
-    // int updateConfigMapper(NbConfigBean bean);
+    int updateConfigMapper(NbConfigBean bean);
     int deleteConfigMapper(String deviceId);
 
     //@Insert("insert into nb_config(gatewayId) values(#{gatewayId}")

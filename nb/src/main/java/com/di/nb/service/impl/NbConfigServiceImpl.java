@@ -57,6 +57,10 @@ public class NbConfigServiceImpl implements NbConfigService {
         return nbConfigDao.insertConfig(bean);
     }
 
+    @Override
+    public int updateConfigService(NbConfigBean bean){
+        return nbConfigDao.updateConfig(bean);
+    }
     // @Override
     // public int updateConfigService(NbConfigBean bean){
     //     return nbConfigDao.updateConfig(bean);

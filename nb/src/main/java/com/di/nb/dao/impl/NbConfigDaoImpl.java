@@ -33,6 +33,11 @@ public class NbConfigDaoImpl implements NbConfigDao {
         return nbConfigMapper.insertConfigMapper(bean);
     }
 
+    @Override
+    public int updateConfig(NbConfigBean bean){
+        return nbConfigMapper.updateConfigMapper(bean);
+    }
+
     // @Override
     // public int updateConfig(NbConfigBean bean){
     //     return nbConfigMapper.updateConfigMapper(bean);

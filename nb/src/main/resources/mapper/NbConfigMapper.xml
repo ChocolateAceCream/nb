@@ -78,16 +78,29 @@
         )
     </insert>
 
-    <!--
+
     <update id="updateConfigMapper" parameterType="com.di.nb.domain.NbConfigBean">
         update nb_config
-        set gatewayId=#{gatewayId}
-        where 1=1
-          and deviceId=#{deviceId}
-                where 1=1
-                and deviceId=#{deviceId}
+        set gatewayId = #{gatewayId},
+            serviceType=#{serviceType},
+            serviceId=#{serviceId},
+            isParsing=#{isParsing},
+            parseField=#{parseField},
+            parseJarClass=#{parseJarClass},
+            parseJarMethod=#{parseJarMethod},
+            isBaseDecode=#{isBaseDecode},
+            storageFields=#{storageFields},
+            isCallback=#{isCallback},
+            appId=#{appId},
+            method=#{method},
+            callbackUrl=#{callbackUrl},
+            maxRetransmit=#{maxRetransmit},
+            expireTime=#{expireTime},
+            callbackFieldsKey=#{callbackFieldsKey},
+            callbackFieldsValues=#{callbackFieldsValues}
+        where 1=1 and deviceId=#{deviceId}
     </update>
-    -->
+
 
     <delete id="deleteConfigMapper" parameterType="com.di.nb.domain.RequestParamsData">
         delete from nb_config

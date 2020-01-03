@@ -10,6 +10,7 @@ public interface NbConfigService {
      String deleteFile(String fileName);
      List<NbConfigBean> getAllConfig();
      int insertConfigService(NbConfigBean bean);
+     int updateConfigService(NbConfigBean bean);
      // int updateConfigService(NbConfigBean bean);
      int deleteConfigService(String data);
 

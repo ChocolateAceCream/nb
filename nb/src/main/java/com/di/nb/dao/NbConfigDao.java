@@ -11,6 +11,7 @@ public interface NbConfigDao {
     NbConfigBean getConfigByDeviceId(String data);
     List<NbConfigBean> getAllConfig();
     int insertConfig(NbConfigBean bean);
+    int updateConfig(NbConfigBean bean);
     // int updateConfig(NbConfigBean bean);
     int deleteConfig(String data);
 }

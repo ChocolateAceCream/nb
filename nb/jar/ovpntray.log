@@ -1,0 +1,254 @@
+_109_p4852' -> {'timestamp': 1577437913, 'type': 'DELETE_PENDING'}
+Fri Dec 27 17:11:53 2019 got DELETE_PENDING for: Profile[id=openvpn_54_241_157_109_p4852,owner=3,host=54.241.157.109,autologin=False,state=2] None
+Fri Dec 27 17:11:53 2019 notify_disconnect: openvpn_54_241_157_109_p4852 None
+Fri Dec 27 17:11:54 2019 TrayClient.connect: (None, '54.241.157.109', 'openvpn', True)
+Fri Dec 27 17:11:54 2019 found best profile: Profile[id=openvpn_54_241_157_109_p4852,owner=3,host=54.241.157.109,autologin=False,state=0]
+Fri Dec 27 17:11:54 2019 >>>> {'cookie': 'TRAY_CLIENT_QWRtaW5pc3RyYXRvcg==_IXIDEG1L', 'state': 'connect', 'profile_id': 'openvpn_54_241_157_109_p4852', 'type': 'PROFILE', 'timestamp': 1577437914}
+Fri Dec 27 17:11:54 2019 **** CONNECT openvpn_54_241_157_109_p4852 TRAY_CLIENT_QWRtaW5pc3RyYXRvcg==_IXIDEG1L
+Fri Dec 27 17:11:54 2019 Not tracking (already owned by us)
+Fri Dec 27 17:11:54 2019 Connect, sid= sess_openvpn_54_241_157_109_p4852_dwocgvDb7OgWPoZR_1
+Fri Dec 27 17:11:54 2019 Tracking owned session
+Fri Dec 27 17:11:54 2019 generating sub_poll parameters
+Fri Dec 27 17:11:54 2019 track_profile_connect: done
+Fri Dec 27 17:11:54 2019 'openvpn_54_241_157_109_p4852' -> {'active': True, 'timestamp': 1577437914, 'type': 'ACTIVE', 'last': None}
+Fri Dec 27 17:11:54 2019 other event: {'active': True, 'timestamp': 1577437914, 'type': 'ACTIVE', 'last': None}
+Fri Dec 27 17:11:54 2019 'openvpn_54_241_157_109_p4852' -> {'status': 'need', 'timestamp': 1577437914, 'need': ['username', 'password'], 'type': 'PASSWORD', 'auth_type': 'Auth'}
+Fri Dec 27 17:11:56 2019 authenticate: host='54.241.157.109' user=u'openvpn' response=u'None'
+Fri Dec 27 17:11:56 2019 authenticate: using preferred host: 54.241.157.109
+Fri Dec 27 17:11:56 2019 authenticate: sid: 'sess_openvpn_54_241_157_109_p4852_dwocgvDb7OgWPoZR_1' profile_id: 'openvpn_54_241_157_109_p4852'
+Fri Dec 27 17:11:56 2019 overriding host with preferred host: 54.241.157.109
+Fri Dec 27 17:11:56 2019 -> SubmitCreds u'openvpn'
+Fri Dec 27 17:11:56 2019 -> SubmitCreds returned: True
+Fri Dec 27 17:11:56 2019 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1577437916, 'state': 'RESOLVE', 'type': 'STATE'}
+Fri Dec 27 17:11:56 2019 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1577437916, 'state': 'WAIT', 'type': 'STATE'}
+Fri Dec 27 17:11:57 2019 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1577437917, 'state': 'CONNECTING', 'type': 'STATE'}
+Fri Dec 27 17:11:59 2019 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1577437919, 'state': 'GET_CONFIG', 'type': 'STATE'}
+Fri Dec 27 17:12:00 2019 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1577437920, 'state': 'ASSIGN_IP', 'type': 'STATE'}
+Fri Dec 27 17:12:00 2019 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1577437920, 'state': 'CONNECTED', 'reason': 'SUCCESS', 'server_ip': '54.241.157.109', 'type': 'STATE', 'vpn_ip': '172.27.232.244'}
+Fri Dec 27 17:12:00 2019 'openvpn_54_241_157_109_p4852' -> {'proto': 'UDP', 'timestamp': 1577437920, 'server': '54.241.157.109', 'vpn_ip': '172.27.232.244', 'user': 'openvpn', 'server_ip': '54.241.157.109', 'type': 'CONNECTED_USER'}
+Fri Dec 27 17:17:22 2019 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1577438242, 'state': 'RECONNECTING', 'type': 'STATE'}
+Fri Dec 27 17:17:22 2019 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1577438242, 'state': 'WAIT', 'type': 'STATE'}
+Fri Dec 27 17:17:22 2019 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1577438242, 'state': 'CONNECTING', 'type': 'STATE'}
+Fri Dec 27 17:17:23 2019 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1577438243, 'state': 'GET_CONFIG', 'type': 'STATE'}
+Fri Dec 27 17:17:23 2019 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1577438243, 'state': 'CONNECTED', 'vpn_ip': '172.27.232.244', 'server_ip': '54.241.157.109', 'reason': 'SUCCESS', 'type': 'STATE'}
+Fri Dec 27 17:17:23 2019 'openvpn_54_241_157_109_p4852' -> {'proto': 'UDP', 'timestamp': 1577438243, 'server': '54.241.157.109', 'vpn_ip': '172.27.232.244', 'user': 'openvpn', 'server_ip': '54.241.157.109', 'type': 'CONNECTED_USER'}
+Fri Dec 27 17:26:25 2019 checking if there are any updates...
+Fri Dec 27 17:26:25 2019 no update available
+Fri Dec 27 17:35:47 2019 TrayClient.disconnect False
+Fri Dec 27 17:35:48 2019 >>>> {'timestamp': 1577439348, 'state': 'disconnect', 'profile_id': 'openvpn_54_241_157_109_p4852', 'type': 'PROFILE'}
+Fri Dec 27 17:35:48 2019 **** DISCONNECT openvpn_54_241_157_109_p4852
+Fri Dec 27 17:35:48 2019 'openvpn_54_241_157_109_p4852' -> {'active': False, 'timestamp': 1577439348, 'type': 'ACTIVE', 'last': True}
+Fri Dec 27 17:35:48 2019 other event: {'active': False, 'timestamp': 1577439348, 'type': 'ACTIVE', 'last': True}
+Fri Dec 27 17:35:48 2019 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1577439348, 'type': 'DELETE_PENDING'}
+Fri Dec 27 17:35:48 2019 got DELETE_PENDING for: Profile[id=openvpn_54_241_157_109_p4852,owner=3,host=54.241.157.109,autologin=False,state=2] None
+Fri Dec 27 17:35:48 2019 notify_disconnect: openvpn_54_241_157_109_p4852 None
+Fri Dec 27 17:45:45 2019 TrayClient.connect: (None, '54.241.157.109', 'openvpn', True)
+Fri Dec 27 17:45:45 2019 found best profile: Profile[id=openvpn_54_241_157_109_p4852,owner=3,host=54.241.157.109,autologin=False,state=0]
+Fri Dec 27 17:45:45 2019 >>>> {'cookie': 'TRAY_CLIENT_QWRtaW5pc3RyYXRvcg==_IXIDEG1L', 'state': 'connect', 'profile_id': 'openvpn_54_241_157_109_p4852', 'type': 'PROFILE', 'timestamp': 1577439945}
+Fri Dec 27 17:45:45 2019 **** CONNECT openvpn_54_241_157_109_p4852 TRAY_CLIENT_QWRtaW5pc3RyYXRvcg==_IXIDEG1L
+Fri Dec 27 17:45:45 2019 Not tracking (already owned by us)
+Fri Dec 27 17:45:45 2019 Connect, sid= sess_openvpn_54_241_157_109_p4852_ZKu0znAAbe66FVuW_1
+Fri Dec 27 17:45:45 2019 Tracking owned session
+Fri Dec 27 17:45:45 2019 generating sub_poll parameters
+Fri Dec 27 17:45:45 2019 track_profile_connect: done
+Fri Dec 27 17:45:45 2019 'openvpn_54_241_157_109_p4852' -> {'active': True, 'timestamp': 1577439945, 'type': 'ACTIVE', 'last': None}
+Fri Dec 27 17:45:45 2019 other event: {'active': True, 'timestamp': 1577439945, 'type': 'ACTIVE', 'last': None}
+Fri Dec 27 17:45:45 2019 'openvpn_54_241_157_109_p4852' -> {'status': 'need', 'timestamp': 1577439945, 'need': ['username', 'password'], 'type': 'PASSWORD', 'auth_type': 'Auth'}
+Fri Dec 27 17:45:58 2019 TrayClient.disconnect False
+Fri Dec 27 17:45:58 2019 >>>> {'timestamp': 1577439958, 'state': 'disconnect', 'profile_id': 'openvpn_54_241_157_109_p4852', 'type': 'PROFILE'}
+Fri Dec 27 17:45:58 2019 **** DISCONNECT openvpn_54_241_157_109_p4852
+Fri Dec 27 17:45:58 2019 'openvpn_54_241_157_109_p4852' -> {'active': False, 'timestamp': 1577439958, 'type': 'ACTIVE', 'last': True}
+Fri Dec 27 17:45:58 2019 other event: {'active': False, 'timestamp': 1577439958, 'type': 'ACTIVE', 'last': True}
+Fri Dec 27 17:45:58 2019 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1577439958, 'type': 'DELETE_PENDING'}
+Fri Dec 27 17:45:58 2019 got DELETE_PENDING for: Profile[id=openvpn_54_241_157_109_p4852,owner=3,host=54.241.157.109,autologin=False,state=1] None
+Fri Dec 27 17:45:58 2019 notify_disconnect: openvpn_54_241_157_109_p4852 None
+----- NEW INSTANTIATION -----
+Thu Jan 02 08:26:12 2020  TrayApp.main()
+Thu Jan 02 08:26:12 2020 going to enter main UI event loop...
+Thu Jan 02 08:26:12 2020 icon state='disconnected' file=u'C:\\Program Files (x86)\\OpenVPN Technologies\\OpenVPN Client\\client\\images\\icon-disconnected.ico'
+Thu Jan 02 08:26:12 2020 icon state='connecting' file=u'C:\\Program Files (x86)\\OpenVPN Technologies\\OpenVPN Client\\client\\images\\icon-connecting.ico'
+Thu Jan 02 08:26:12 2020 icon state='connected' file=u'C:\\Program Files (x86)\\OpenVPN Technologies\\OpenVPN Client\\client\\images\\icon-connected.ico'
+Thu Jan 02 08:26:12 2020 icon state='GET_CONFIG' file=u'C:\\Program Files (x86)\\OpenVPN Technologies\\OpenVPN Client\\client\\images\\icon-get-config.ico'
+Thu Jan 02 08:26:12 2020 icon state='TCP_CONNECT' file=u'C:\\Program Files (x86)\\OpenVPN Technologies\\OpenVPN Client\\client\\images\\icon-tcp-connect.ico'
+Thu Jan 02 08:26:12 2020 icon state='RESOLVE' file=u'C:\\Program Files (x86)\\OpenVPN Technologies\\OpenVPN Client\\client\\images\\icon-resolve.ico'
+Thu Jan 02 08:26:12 2020 icon state='RSA_SIGN' file=u'C:\\Program Files (x86)\\OpenVPN Technologies\\OpenVPN Client\\client\\images\\icon-rsa-sign.ico'
+Thu Jan 02 08:26:12 2020 icon state='ADD_ROUTES' file=u'C:\\Program Files (x86)\\OpenVPN Technologies\\OpenVPN Client\\client\\images\\icon-add-routes.ico'
+Thu Jan 02 08:26:12 2020 icon state='ASSIGN_IP' file=u'C:\\Program Files (x86)\\OpenVPN Technologies\\OpenVPN Client\\client\\images\\icon-assign-ip.ico'
+Thu Jan 02 08:26:12 2020 icon state='RECONNECTING' file=u'C:\\Program Files (x86)\\OpenVPN Technologies\\OpenVPN Client\\client\\images\\icon-reconnecting.ico'
+Thu Jan 02 08:26:12 2020 icon state='AUTH' file=u'C:\\Program Files (x86)\\OpenVPN Technologies\\OpenVPN Client\\client\\images\\icon-auth.ico'
+Thu Jan 02 08:26:12 2020 icon state='WAIT' file=u'C:\\Program Files (x86)\\OpenVPN Technologies\\OpenVPN Client\\client\\images\\icon-wait.ico'
+Thu Jan 02 08:26:12 2020 trying to load DLL: C:\Program Files (x86)\OpenVPN Technologies\OpenVPN Client\core\ovpntray.dll
+Thu Jan 02 08:26:12 2020 loaded resource DLL: 36372480
+Thu Jan 02 08:26:12 2020 run_client()
+Thu Jan 02 08:26:12 2020 TrackActiveProfiles sid='sess_TrackActiveProfiles_nsYrzXpjh71bns0p_1'
+Thu Jan 02 08:26:12 2020 checking if there are any updates...
+Thu Jan 02 08:26:12 2020 no update available
+Thu Jan 02 08:26:12 2020 >>>> {'timestamp': 1577924772, 'state': 'add_profile', 'profile_id': '60_205_202_46_p1961', 'type': 'PROFILE'}
+Thu Jan 02 08:26:12 2020 **** ADD PROFILE 60_205_202_46_p1961
+Thu Jan 02 08:26:12 2020 >>>> {'timestamp': 1577924772, 'state': 'add_profile', 'profile_id': 'openvpn_54_241_157_109_p4852', 'type': 'PROFILE'}
+Thu Jan 02 08:26:12 2020 **** ADD PROFILE openvpn_54_241_157_109_p4852
+----- NEW INSTANTIATION -----
+Thu Jan 02 08:51:50 2020  TrayApp.main()
+Thu Jan 02 08:51:50 2020 going to enter main UI event loop...
+Thu Jan 02 08:51:50 2020 icon state='disconnected' file=u'C:\\Program Files (x86)\\OpenVPN Technologies\\OpenVPN Client\\client\\images\\icon-disconnected.ico'
+Thu Jan 02 08:51:50 2020 icon state='connecting' file=u'C:\\Program Files (x86)\\OpenVPN Technologies\\OpenVPN Client\\client\\images\\icon-connecting.ico'
+Thu Jan 02 08:51:50 2020 icon state='connected' file=u'C:\\Program Files (x86)\\OpenVPN Technologies\\OpenVPN Client\\client\\images\\icon-connected.ico'
+Thu Jan 02 08:51:50 2020 icon state='GET_CONFIG' file=u'C:\\Program Files (x86)\\OpenVPN Technologies\\OpenVPN Client\\client\\images\\icon-get-config.ico'
+Thu Jan 02 08:51:50 2020 icon state='TCP_CONNECT' file=u'C:\\Program Files (x86)\\OpenVPN Technologies\\OpenVPN Client\\client\\images\\icon-tcp-connect.ico'
+Thu Jan 02 08:51:50 2020 icon state='RESOLVE' file=u'C:\\Program Files (x86)\\OpenVPN Technologies\\OpenVPN Client\\client\\images\\icon-resolve.ico'
+Thu Jan 02 08:51:50 2020 icon state='RSA_SIGN' file=u'C:\\Program Files (x86)\\OpenVPN Technologies\\OpenVPN Client\\client\\images\\icon-rsa-sign.ico'
+Thu Jan 02 08:51:50 2020 icon state='ADD_ROUTES' file=u'C:\\Program Files (x86)\\OpenVPN Technologies\\OpenVPN Client\\client\\images\\icon-add-routes.ico'
+Thu Jan 02 08:51:50 2020 icon state='ASSIGN_IP' file=u'C:\\Program Files (x86)\\OpenVPN Technologies\\OpenVPN Client\\client\\images\\icon-assign-ip.ico'
+Thu Jan 02 08:51:50 2020 icon state='RECONNECTING' file=u'C:\\Program Files (x86)\\OpenVPN Technologies\\OpenVPN Client\\client\\images\\icon-reconnecting.ico'
+Thu Jan 02 08:51:50 2020 icon state='AUTH' file=u'C:\\Program Files (x86)\\OpenVPN Technologies\\OpenVPN Client\\client\\images\\icon-auth.ico'
+Thu Jan 02 08:51:50 2020 icon state='WAIT' file=u'C:\\Program Files (x86)\\OpenVPN Technologies\\OpenVPN Client\\client\\images\\icon-wait.ico'
+Thu Jan 02 08:51:50 2020 trying to load DLL: C:\Program Files (x86)\OpenVPN Technologies\OpenVPN Client\core\ovpntray.dll
+Thu Jan 02 08:51:50 2020 loaded resource DLL: 37552128
+Thu Jan 02 08:51:50 2020 run_client()
+Thu Jan 02 08:51:50 2020 TrackActiveProfiles sid='sess_TrackActiveProfiles_Oy5l6GZlQ2EpYR6V_1'
+Thu Jan 02 08:51:50 2020 checking if there are any updates...
+Thu Jan 02 08:51:50 2020 no update available
+Thu Jan 02 08:51:50 2020 >>>> {'timestamp': 1577926310, 'state': 'add_profile', 'profile_id': '60_205_202_46_p1961', 'type': 'PROFILE'}
+Thu Jan 02 08:51:50 2020 **** ADD PROFILE 60_205_202_46_p1961
+Thu Jan 02 08:51:50 2020 >>>> {'timestamp': 1577926310, 'state': 'add_profile', 'profile_id': 'openvpn_54_241_157_109_p4852', 'type': 'PROFILE'}
+Thu Jan 02 08:51:50 2020 **** ADD PROFILE openvpn_54_241_157_109_p4852
+Thu Jan 02 12:51:57 2020 checking if there are any updates...
+Thu Jan 02 12:51:57 2020 no update available
+Thu Jan 02 13:19:32 2020 TrayClient.connect: (None, '54.241.157.109', 'openvpn', True)
+Thu Jan 02 13:19:32 2020 found best profile: Profile[id=openvpn_54_241_157_109_p4852,owner=0,host=54.241.157.109,autologin=False,state=0]
+Thu Jan 02 13:19:32 2020 Connect, sid= sess_openvpn_54_241_157_109_p4852_m4TrSKEqKlXrOvZ1_1
+Thu Jan 02 13:19:32 2020 Tracking owned session
+Thu Jan 02 13:19:32 2020 generating sub_poll parameters
+Thu Jan 02 13:19:32 2020 track_profile_connect: done
+Thu Jan 02 13:19:32 2020 >>>> {'cookie': 'TRAY_CLIENT_QWRtaW5pc3RyYXRvcg==_GFTqCJJL', 'state': 'connect', 'profile_id': 'openvpn_54_241_157_109_p4852', 'type': 'PROFILE', 'timestamp': 1577942372}
+Thu Jan 02 13:19:32 2020 **** CONNECT openvpn_54_241_157_109_p4852 TRAY_CLIENT_QWRtaW5pc3RyYXRvcg==_GFTqCJJL
+Thu Jan 02 13:19:32 2020 Not tracking (already owned by us)
+Thu Jan 02 13:19:32 2020 'openvpn_54_241_157_109_p4852' -> {'active': True, 'timestamp': 1577942372, 'type': 'ACTIVE', 'last': None}
+Thu Jan 02 13:19:32 2020 other event: {'active': True, 'timestamp': 1577942372, 'type': 'ACTIVE', 'last': None}
+Thu Jan 02 13:19:32 2020 'openvpn_54_241_157_109_p4852' -> {'status': 'need', 'timestamp': 1577942372, 'need': ['username', 'password'], 'type': 'PASSWORD', 'auth_type': 'Auth'}
+Thu Jan 02 13:19:34 2020 authenticate: host='54.241.157.109' user=u'openvpn' response=u'None'
+Thu Jan 02 13:19:34 2020 authenticate: using preferred host: 54.241.157.109
+Thu Jan 02 13:19:34 2020 authenticate: sid: 'sess_openvpn_54_241_157_109_p4852_m4TrSKEqKlXrOvZ1_1' profile_id: 'openvpn_54_241_157_109_p4852'
+Thu Jan 02 13:19:34 2020 overriding host with preferred host: 54.241.157.109
+Thu Jan 02 13:19:34 2020 -> SubmitCreds u'openvpn'
+Thu Jan 02 13:19:34 2020 -> SubmitCreds returned: True
+Thu Jan 02 13:19:34 2020 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1577942374, 'state': 'RESOLVE', 'type': 'STATE'}
+Thu Jan 02 13:19:34 2020 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1577942374, 'state': 'WAIT', 'type': 'STATE'}
+Thu Jan 02 13:19:35 2020 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1577942375, 'state': 'CONNECTING', 'type': 'STATE'}
+Thu Jan 02 13:19:35 2020 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1577942375, 'state': 'GET_CONFIG', 'type': 'STATE'}
+Thu Jan 02 13:19:35 2020 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1577942375, 'state': 'ASSIGN_IP', 'type': 'STATE'}
+Thu Jan 02 13:19:37 2020 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1577942377, 'state': 'CONNECTED', 'reason': 'SUCCESS', 'server_ip': '54.241.157.109', 'type': 'STATE', 'vpn_ip': '172.27.233.6'}
+Thu Jan 02 13:19:37 2020 'openvpn_54_241_157_109_p4852' -> {'proto': 'UDP', 'timestamp': 1577942377, 'server': '54.241.157.109', 'vpn_ip': '172.27.233.6', 'user': 'openvpn', 'server_ip': '54.241.157.109', 'type': 'CONNECTED_USER'}
+Thu Jan 02 13:24:18 2020 TrayClient.disconnect False
+Thu Jan 02 13:24:19 2020 'openvpn_54_241_157_109_p4852' -> {'active': False, 'timestamp': 1577942659, 'type': 'ACTIVE', 'last': True}
+Thu Jan 02 13:24:19 2020 other event: {'active': False, 'timestamp': 1577942659, 'type': 'ACTIVE', 'last': True}
+Thu Jan 02 13:24:19 2020 >>>> {'timestamp': 1577942659, 'state': 'disconnect', 'profile_id': 'openvpn_54_241_157_109_p4852', 'type': 'PROFILE'}
+Thu Jan 02 13:24:19 2020 **** DISCONNECT openvpn_54_241_157_109_p4852
+Thu Jan 02 13:24:19 2020 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1577942659, 'type': 'DELETE_PENDING'}
+Thu Jan 02 13:24:19 2020 got DELETE_PENDING for: Profile[id=openvpn_54_241_157_109_p4852,owner=3,host=54.241.157.109,autologin=False,state=2] None
+Thu Jan 02 13:24:19 2020 notify_disconnect: openvpn_54_241_157_109_p4852 None
+Thu Jan 02 13:26:12 2020 TrayClient.connect: (None, '54.241.157.109', 'openvpn', True)
+Thu Jan 02 13:26:12 2020 found best profile: Profile[id=openvpn_54_241_157_109_p4852,owner=3,host=54.241.157.109,autologin=False,state=0]
+Thu Jan 02 13:26:12 2020 >>>> {'cookie': 'TRAY_CLIENT_QWRtaW5pc3RyYXRvcg==_GFTqCJJL', 'state': 'connect', 'profile_id': 'openvpn_54_241_157_109_p4852', 'type': 'PROFILE', 'timestamp': 1577942772}
+Thu Jan 02 13:26:12 2020 **** CONNECT openvpn_54_241_157_109_p4852 TRAY_CLIENT_QWRtaW5pc3RyYXRvcg==_GFTqCJJL
+Thu Jan 02 13:26:12 2020 Not tracking (already owned by us)
+Thu Jan 02 13:26:12 2020 Connect, sid= sess_openvpn_54_241_157_109_p4852_2evfWD3AY5BO7zf1_1
+Thu Jan 02 13:26:12 2020 Tracking owned session
+Thu Jan 02 13:26:12 2020 generating sub_poll parameters
+Thu Jan 02 13:26:12 2020 track_profile_connect: done
+Thu Jan 02 13:26:12 2020 'openvpn_54_241_157_109_p4852' -> {'active': True, 'timestamp': 1577942772, 'type': 'ACTIVE', 'last': None}
+Thu Jan 02 13:26:12 2020 other event: {'active': True, 'timestamp': 1577942772, 'type': 'ACTIVE', 'last': None}
+Thu Jan 02 13:26:12 2020 'openvpn_54_241_157_109_p4852' -> {'status': 'need', 'timestamp': 1577942772, 'need': ['username', 'password'], 'type': 'PASSWORD', 'auth_type': 'Auth'}
+Thu Jan 02 13:26:14 2020 authenticate: host='54.241.157.109' user=u'openvpn' response=u'None'
+Thu Jan 02 13:26:14 2020 authenticate: using preferred host: 54.241.157.109
+Thu Jan 02 13:26:14 2020 authenticate: sid: 'sess_openvpn_54_241_157_109_p4852_2evfWD3AY5BO7zf1_1' profile_id: 'openvpn_54_241_157_109_p4852'
+Thu Jan 02 13:26:14 2020 overriding host with preferred host: 54.241.157.109
+Thu Jan 02 13:26:14 2020 -> SubmitCreds u'openvpn'
+Thu Jan 02 13:26:14 2020 -> SubmitCreds returned: True
+Thu Jan 02 13:26:14 2020 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1577942774, 'state': 'RESOLVE', 'type': 'STATE'}
+Thu Jan 02 13:26:14 2020 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1577942774, 'state': 'WAIT', 'type': 'STATE'}
+Thu Jan 02 13:26:14 2020 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1577942774, 'state': 'CONNECTING', 'type': 'STATE'}
+Thu Jan 02 13:26:15 2020 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1577942775, 'state': 'GET_CONFIG', 'type': 'STATE'}
+Thu Jan 02 13:26:15 2020 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1577942775, 'state': 'ASSIGN_IP', 'type': 'STATE'}
+Thu Jan 02 13:26:16 2020 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1577942776, 'state': 'CONNECTED', 'reason': 'SUCCESS', 'server_ip': '54.241.157.109', 'type': 'STATE', 'vpn_ip': '172.27.233.7'}
+Thu Jan 02 13:26:16 2020 'openvpn_54_241_157_109_p4852' -> {'proto': 'UDP', 'timestamp': 1577942776, 'server': '54.241.157.109', 'vpn_ip': '172.27.233.7', 'user': 'openvpn', 'server_ip': '54.241.157.109', 'type': 'CONNECTED_USER'}
+Thu Jan 02 13:51:37 2020 TrayClient.disconnect False
+Thu Jan 02 13:51:38 2020 'openvpn_54_241_157_109_p4852' -> {'active': False, 'timestamp': 1577944298, 'type': 'ACTIVE', 'last': True}
+Thu Jan 02 13:51:38 2020 other event: {'active': False, 'timestamp': 1577944298, 'type': 'ACTIVE', 'last': True}
+Thu Jan 02 13:51:38 2020 >>>> {'timestamp': 1577944298, 'state': 'disconnect', 'profile_id': 'openvpn_54_241_157_109_p4852', 'type': 'PROFILE'}
+Thu Jan 02 13:51:38 2020 **** DISCONNECT openvpn_54_241_157_109_p4852
+Thu Jan 02 13:51:38 2020 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1577944298, 'type': 'DELETE_PENDING'}
+Thu Jan 02 13:51:38 2020 got DELETE_PENDING for: Profile[id=openvpn_54_241_157_109_p4852,owner=3,host=54.241.157.109,autologin=False,state=2] None
+Thu Jan 02 13:51:38 2020 notify_disconnect: openvpn_54_241_157_109_p4852 None
+Thu Jan 02 16:52:03 2020 checking if there are any updates...
+Thu Jan 02 16:52:03 2020 no update available
+Fri Jan 03 08:30:52 2020 Poll error: Connection timeout
+Fri Jan 03 08:30:58 2020 ************ EXCEPTION TRIGGERED RESTART
+Fri Jan 03 08:31:06 2020 run_client()
+Fri Jan 03 08:31:06 2020 TrackActiveProfiles sid='sess_TrackActiveProfiles_LxAlV6Mp4cZpSsqw_2'
+Fri Jan 03 08:31:06 2020 checking if there are any updates...
+Fri Jan 03 08:31:06 2020 no update available
+Fri Jan 03 08:31:07 2020 >>>> {'timestamp': 1578011466, 'state': 'add_profile', 'profile_id': '60_205_202_46_p1961', 'type': 'PROFILE'}
+Fri Jan 03 08:31:07 2020 **** ADD PROFILE 60_205_202_46_p1961
+Fri Jan 03 08:31:07 2020 >>>> {'timestamp': 1578011466, 'state': 'add_profile', 'profile_id': 'openvpn_54_241_157_109_p4852', 'type': 'PROFILE'}
+Fri Jan 03 08:31:07 2020 **** ADD PROFILE openvpn_54_241_157_109_p4852
+Fri Jan 03 08:58:12 2020 TrayClient.connect: (None, '54.241.157.109', 'openvpn', True)
+Fri Jan 03 08:58:12 2020 found best profile: Profile[id=openvpn_54_241_157_109_p4852,owner=0,host=54.241.157.109,autologin=False,state=0]
+Fri Jan 03 08:58:13 2020 Connect, sid= sess_openvpn_54_241_157_109_p4852_9woJ8UMNUsGqyWnU_1
+Fri Jan 03 08:58:13 2020 Tracking owned session
+Fri Jan 03 08:58:13 2020 generating sub_poll parameters
+Fri Jan 03 08:58:13 2020 track_profile_connect: done
+Fri Jan 03 08:58:13 2020 >>>> {'cookie': 'TRAY_CLIENT_QWRtaW5pc3RyYXRvcg==_TTi8GrkC', 'state': 'connect', 'profile_id': 'openvpn_54_241_157_109_p4852', 'type': 'PROFILE', 'timestamp': 1578013093}
+Fri Jan 03 08:58:13 2020 **** CONNECT openvpn_54_241_157_109_p4852 TRAY_CLIENT_QWRtaW5pc3RyYXRvcg==_TTi8GrkC
+Fri Jan 03 08:58:13 2020 Not tracking (already owned by us)
+Fri Jan 03 08:58:13 2020 'openvpn_54_241_157_109_p4852' -> {'active': True, 'timestamp': 1578013093, 'type': 'ACTIVE', 'last': None}
+Fri Jan 03 08:58:13 2020 other event: {'active': True, 'timestamp': 1578013093, 'type': 'ACTIVE', 'last': None}
+Fri Jan 03 08:58:13 2020 'openvpn_54_241_157_109_p4852' -> {'status': 'need', 'timestamp': 1578013093, 'need': ['username', 'password'], 'type': 'PASSWORD', 'auth_type': 'Auth'}
+Fri Jan 03 08:58:14 2020 authenticate: host='54.241.157.109' user=u'openvpn' response=u'None'
+Fri Jan 03 08:58:14 2020 authenticate: using preferred host: 54.241.157.109
+Fri Jan 03 08:58:14 2020 authenticate: sid: 'sess_openvpn_54_241_157_109_p4852_9woJ8UMNUsGqyWnU_1' profile_id: 'openvpn_54_241_157_109_p4852'
+Fri Jan 03 08:58:14 2020 overriding host with preferred host: 54.241.157.109
+Fri Jan 03 08:58:14 2020 -> SubmitCreds u'openvpn'
+Fri Jan 03 08:58:14 2020 -> SubmitCreds returned: True
+Fri Jan 03 08:58:15 2020 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1578013095, 'state': 'RESOLVE', 'type': 'STATE'}
+Fri Jan 03 08:58:15 2020 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1578013095, 'state': 'WAIT', 'type': 'STATE'}
+Fri Jan 03 08:58:15 2020 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1578013095, 'state': 'CONNECTING', 'type': 'STATE'}
+Fri Jan 03 08:58:15 2020 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1578013095, 'state': 'GET_CONFIG', 'type': 'STATE'}
+Fri Jan 03 08:58:15 2020 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1578013095, 'state': 'ASSIGN_IP', 'type': 'STATE'}
+Fri Jan 03 08:58:17 2020 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1578013097, 'state': 'CONNECTED', 'reason': 'SUCCESS', 'server_ip': '54.241.157.109', 'type': 'STATE', 'vpn_ip': '172.27.233.8'}
+Fri Jan 03 08:58:17 2020 'openvpn_54_241_157_109_p4852' -> {'proto': 'UDP', 'timestamp': 1578013097, 'server': '54.241.157.109', 'vpn_ip': '172.27.233.8', 'user': 'openvpn', 'server_ip': '54.241.157.109', 'type': 'CONNECTED_USER'}
+Fri Jan 03 09:40:57 2020 TrayClient.disconnect False
+Fri Jan 03 09:40:58 2020 >>>> {'timestamp': 1578015658, 'state': 'disconnect', 'profile_id': 'openvpn_54_241_157_109_p4852', 'type': 'PROFILE'}
+Fri Jan 03 09:40:58 2020 **** DISCONNECT openvpn_54_241_157_109_p4852
+Fri Jan 03 09:40:58 2020 'openvpn_54_241_157_109_p4852' -> {'active': False, 'timestamp': 1578015658, 'type': 'ACTIVE', 'last': True}
+Fri Jan 03 09:40:58 2020 other event: {'active': False, 'timestamp': 1578015658, 'type': 'ACTIVE', 'last': True}
+Fri Jan 03 09:40:58 2020 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1578015658, 'type': 'DELETE_PENDING'}
+Fri Jan 03 09:40:58 2020 got DELETE_PENDING for: Profile[id=openvpn_54_241_157_109_p4852,owner=3,host=54.241.157.109,autologin=False,state=2] None
+Fri Jan 03 09:40:58 2020 notify_disconnect: openvpn_54_241_157_109_p4852 None
+Fri Jan 03 10:20:24 2020 TrayClient.connect: (None, '54.241.157.109', 'openvpn', True)
+Fri Jan 03 10:20:24 2020 found best profile: Profile[id=openvpn_54_241_157_109_p4852,owner=3,host=54.241.157.109,autologin=False,state=0]
+Fri Jan 03 10:20:25 2020 Connect, sid= sess_openvpn_54_241_157_109_p4852_vkOVTBgSxfRK92cO_1
+Fri Jan 03 10:20:25 2020 Tracking owned session
+Fri Jan 03 10:20:25 2020 generating sub_poll parameters
+Fri Jan 03 10:20:25 2020 track_profile_connect: done
+Fri Jan 03 10:20:25 2020 >>>> {'cookie': 'TRAY_CLIENT_QWRtaW5pc3RyYXRvcg==_TTi8GrkC', 'state': 'connect', 'profile_id': 'openvpn_54_241_157_109_p4852', 'type': 'PROFILE', 'timestamp': 1578018025}
+Fri Jan 03 10:20:25 2020 **** CONNECT openvpn_54_241_157_109_p4852 TRAY_CLIENT_QWRtaW5pc3RyYXRvcg==_TTi8GrkC
+Fri Jan 03 10:20:25 2020 Not tracking (already owned by us)
+Fri Jan 03 10:20:25 2020 'openvpn_54_241_157_109_p4852' -> {'active': True, 'timestamp': 1578018025, 'type': 'ACTIVE', 'last': None}
+Fri Jan 03 10:20:25 2020 other event: {'active': True, 'timestamp': 1578018025, 'type': 'ACTIVE', 'last': None}
+Fri Jan 03 10:20:26 2020 'openvpn_54_241_157_109_p4852' -> {'status': 'need', 'timestamp': 1578018025, 'need': ['username', 'password'], 'type': 'PASSWORD', 'auth_type': 'Auth'}
+Fri Jan 03 10:20:28 2020 authenticate: host='54.241.157.109' user=u'openvpn' response=u'None'
+Fri Jan 03 10:20:28 2020 authenticate: using preferred host: 54.241.157.109
+Fri Jan 03 10:20:28 2020 authenticate: sid: 'sess_openvpn_54_241_157_109_p4852_vkOVTBgSxfRK92cO_1' profile_id: 'openvpn_54_241_157_109_p4852'
+Fri Jan 03 10:20:28 2020 overriding host with preferred host: 54.241.157.109
+Fri Jan 03 10:20:28 2020 -> SubmitCreds u'openvpn'
+Fri Jan 03 10:20:28 2020 -> SubmitCreds returned: True
+Fri Jan 03 10:20:28 2020 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1578018028, 'state': 'RESOLVE', 'type': 'STATE'}
+Fri Jan 03 10:20:28 2020 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1578018028, 'state': 'WAIT', 'type': 'STATE'}
+Fri Jan 03 10:20:28 2020 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1578018028, 'state': 'CONNECTING', 'type': 'STATE'}
+Fri Jan 03 10:20:29 2020 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1578018029, 'state': 'GET_CONFIG', 'type': 'STATE'}
+Fri Jan 03 10:20:29 2020 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1578018029, 'state': 'ASSIGN_IP', 'type': 'STATE'}
+Fri Jan 03 10:20:33 2020 'openvpn_54_241_157_109_p4852' -> {'timestamp': 1578018033, 'state': 'CONNECTED', 'reason': 'SUCCESS', 'server_ip': '54.241.157.109', 'type': 'STATE', 'vpn_ip': '172.27.233.9'}
+Fri Jan 03 10:20:33 2020 'openvpn_54_241_157_109_p4852' -> {'proto': 'UDP', 'timestamp': 1578018033, 'server': '54.241.157.109', 'vpn_ip': '172.27.233.9', 'user': 'openvpn', 'server_ip': '54.241.157.109', 'type': 'CONNECTED_USER'}
+Fri Jan 03 10:31:13 2020 Failed to add the taskbar icon: (1460, 'Shell_NotifyIcon', 'This operation returned because the timeout period expired.'): win/ovpntray:166 (pywintypes.error)
+Fri Jan 03 10:31:17 2020 Failed to add the taskbar icon: (1460, 'Shell_NotifyIcon', 'This operation returned because the timeout period expired.'): win/ovpntray:166 (pywintypes.error)
